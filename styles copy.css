@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .main-container {
+    position: relative; /* Add this */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Change to center */
+    justify-content: center; /* Change to center */
+    width: 100%;
+  
+    height: 100vh;
+    padding: 10px;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px 20px;
+  }
+  
+  .logo img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  .card-container {
+    /* margin: auto 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Set position to relative */
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.my-card{
+    /* margin: auto; */
+    /* margin: 2%; */
+    background-color: white;
+    /* padding: 2%; */
+    width: 45%; /* Adjust width as needed */
+    height: 85vh; /* Adjust height as needed */
+    position: relative; /* Set position to relative */
+}
+.logo-middle {
+    position: absolute; /* Position the logo image absolutely within the card container */
+    top: 40%; /* Place it vertically centered */
+    left: 50%;
+    width: 50%; 
+    height: 80%;/* Place it horizontally centered */
+    transform: translate(-50%, -50%); /* Adjust to center it properly */
+    z-index: 2; /* Push it behind the user image */
+}
+h2{ position: absolute; /* Position the logo image absolutely within the card container */
+  top: 70vh; /* Place it vertically centered */
+  left: 50%;
+  margin: 0;
+  /* width: 50%;  */
+  /* height: 50%;Place it horizontally centered */
+  transform: translate(-50%, -50%); /* Adjust to center it properly */
+  z-index: 2; /* Push it behind the user image */
+}
+.user-image {
+    position: absolute; /* Position the logo image absolutely within the card container */
+    top: 30%; /* Place it vertically centered */
+    left: 32.2%;
+    width: 35%; 
+    height: 41%;/* Place it horizontally centered */
+    z-index: 3; /* Bring it in front of the logo image */
+}
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.company-logo {
+  width: 300px;
+  height: 100px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+.user-text {
+    /* position: absolute; Set position to absolute */
+    bottom: 0%; /* Position at the bottom of the container */
+    left: 25%; /* Align it to the left if necessary */
+    width: 30%; /* Take full width of the container */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  
+  .custom-file-upload {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #5f646b;
+ 
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.custom-file-upload input[type="file"] {
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.custom-file-upload span {
+    margin-right: 10px;
+}
+
+#textInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 2px solid #5f646b;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#textInput:focus {
+    border-color: #ff6c00; /* Change border color on focus */
+    outline: none;
+}
+
+/* Placeholder Styling */
+#textInput::placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+/* Hover Effect */
+#textInput:hover {
+    border-color: #0056b3;
+}
+
+  /* Additional styling for input and button */
+ 
+  
+  .download-button, .custom-file-upload {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+
+  .my-buttons{
+    display: flex;
+    justify-content: space-between;
+
+  }
